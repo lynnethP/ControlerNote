@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+  <!--menu-->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    
+
+  <a class="slider-brand d-flex align-items-center justify-content-center" href="../index.html"> <img src="../../imagenes/logo2.png" width="200px"></a>
+
+  <hr class="sidebar-divider my-0">
+
+  <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../usuario/index.html">Gestionar Usuario</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../seccion/index.html">Gestionar Sección</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../saberesCompl/index.html">Gestionar Saberes Compl.</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../profesor/index.html">Gestionar Profesores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../tutores/index.html">Gestionar Tutores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../alumno/index.html">Gestionar Alumnos</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../transcripcionNotas/index.html">Transcripción de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../listaNota/index.html">Lista de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../contsAprobados/index.html">Constancia de Aprobados</a>
+  </li>
+  </ul>
+  <!--fin menu-->
+   
+   <div id="content-wrapper" class="d-flex-flex-column">
+     
+     <div id="content">
+       <!--cabecera del sistema-->
+       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        
+            <h2 class="text-dark">Admin | Samuel Torrealba</h2>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../../imagenes/menu.png"><span class="badge badge-danger badge-counter">+3</span></a>
+          </li>
+
+           <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../../imagenes/manual.png" width="30px"></a>
+          </li>
+
+           <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="../../index.html" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../../imagenes/cerrar sesion.png" width="30px"></a>
+          </li>
+        </ul>
+       </nav>
+
+       <div class="container-fluid">
+          <div class="d-sm-flex align-items-center text-aling-center justify-content-between mb-4">
+            <h1 class="text-success">Gestionar Profesores</h1>
+
+            <a class=" d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="#"><img src="../../imagenes/descar.png">Descargar Listado</a>
+          </div>
+        
+
+<!---para las tablas-->
+        <div class=" card shadow md-4">
+
+          <div class="card-body">
+
+            <div class="table-responsive">
+
+              <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+
+                <div class="row">
+
+                  <div class="col-sm-12 col-md-6">
+                    <div class="dataTables_length" id="dataTable_length">
+                      <label>De:
+
+                        <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm">
+                          <option value="5">5</option>
+                          <option value="5">15</option>
+                          <option value="5">20</option>
+                          <option value="5">25</option>
+                        </select>
+                           filas.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6">
+                   <div id="dataTable_filter" class="dataTables_filt">
+                     <label>
+                       Buscar:
+                       <input type="search" class="form-control form-control-sm" placeholder arial-control="dataTable">
+                     </label>
+                   </div>  
+                  </div>
+                </div>
+
+                <div class="row">
+                 <div class="col-sm-12">
+                   <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%">
+                     <thead>
+                       <tr role="row">
+                         <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name:activate to sort column ascending" style="width: 90.0104px;" aria-sort="descending">
+                           idProfesor
+                         </th>
+                         <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name:activate to sort column ascending" style="width: 90.0104px;" aria-sort="descending">
+                           idUsuario
+                         </th>
+                         <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name:activate to sort column ascending" style="width: 90.0104px;" aria-sort="descending">
+                           Especialidad
+                         </th>
+                        
+                         <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name:activate to sort column ascending" style="width: 90.0104px;" aria-sort="descending">
+                           Saber Asignado
+                         </th>
+
+                         <th class="sorting_desc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name:activate to sort column ascending" style="width: 90.0104px;" aria-sort="descending">
+                           Seccion Asignada
+                         </th>
+
+
+                       </tr>
+                     </thead>
+
+                     <tbody>
+                        <tr role="row" class="odd">
+                          <td class="sorting_1">P1</td>
+                          <td>Us2</td>
+                          <td>Ing.Sistema</td>
+                          <td>Mto0101, CmEf0301</td>
+                          <td>IN1101, IN1202 </td>
+                        </tr>
+
+                         <tr role="row" class="odd">
+                          <td class="sorting_1">P2</td>
+                          <td>Us3</td>
+                          <td>Lic.Contaduria</td>
+                          <td>CmEf0301</td>
+                          <td>IN2102</td>
+                        </tr>
+
+                        <tr role="row" class="odd">
+                          <td class="sorting_1">P3</td>
+                          <td>Us5</td>
+                          <td>Lic.Contaduria</td>
+                          <td>PCI0102, CAD0401</td>
+                          <td>IN3201</td>
+                        </tr>
+
+                        <tr role="row" class="odd">
+                          <td class="sorting_1">P4</td>
+                          <td>Us8</td>
+                          <td>Lic.Administración</td>
+                          <td>INN0301</td>
+                          <td>IN3201, IN2102</td>
+                        </tr>
+
+                     </tbody>
+                   </table>
+
+                 </div>
+                </div>
+                
+                <div class="row" id="botones">
+                  <div class="col-4"><a href="formprofesor.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" id="btnMod">Agregar Info. Y Saberes</a></div>
+
+
+                  <div class="col-4"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm" id="btnMod">Modificar Info. Y Saberes</a></div>
+
+                  <div class="col-4"><a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm" id="btnMod">Eliminar Info. Y Saberes</a></div>
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+     </div>
+   </div>
+</div>
+  
+
+
+
+    <footer class="bg-gradient-dark">
+
+          <div class="footer-copyright text-center text-light py-3">&copy; 2020 Copyright
+            <a href="#"> ControlerNote</a>
+          </div>
+
+    </footer>
+
+    <script src="js/jQuery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/index.js"></script>      
+</body>
+</html>

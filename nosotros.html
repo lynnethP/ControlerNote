@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body id="body">
+
+    <section class="section-01">
+        <nav class="navbar navbar-expand-sm bg-light" id="head">
+            <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
+                <a class="navbar-brand text-dark" id="logo" href="#">
+                    <img id="controler" src="imagenes/controler.png">
+                </a>
+            </div>
+
+
+            <div class="menu col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item">
+                        <a id="opt" class="inicio nav-link text-dark rounded" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="opt" class="nosotros nav-link text-light rounded btn-primary active" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <span id="opt"><img id="icono" src="icons/search.svg"></span>
+                    </li>
+                    
+                </ul>
+            </div>    
+        </nav>
+
+        <div  id="buscador">
+            <div class="container">
+                <input type="text" id="inputSearch" name="" onkeyup="buscador()" placeholder="Buscar">
+            </div>
+        </div>
+
+        <div class="box container">
+            <ul id="box_search">
+                <li><a href="index.html#calificaciones"><img id="lupa" src="lupa.png">Calificaciones</a></li>
+                <li><a href="index.html#saberes"><span><img id="lupa" src="lupa.png"></span>Saberes Complementarios</a></li>
+                <li><a href="index.html#transcripcion"><img id="lupa" src="lupa.png">Transcripción de Calificaciones</a></li>
+                <li><a href="index.html#constancia"><img id="lupa" src="lupa.png">Constancias de Aprobación</a></li>
+            </ul>
+
+        </div>
+
+        
+        <div id="cover_busqueda"></div>
+
+    </section>
+   
+
+<br><br><br><br>
+
+    <section class="section-03 container col-12">       
+        <a name="historia">
+
+        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-4 historia">
+            <div class="col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/universid.png" width="100px" height="110px">
+            </div>
+
+            <div class="row container col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                La Universidad Politécnica Territorial del Estado Lara Andrés Eloy Blanco nació como ciclo básico superior (CBS) en 1972, y fue la antesala de los estudiantes de la educación superior que debían cursar dos semestres en esta casa de estudio antes de ingresar a las universidades, que para la época funcionaban en Barquisimeto: UNEXPO, UCLA, UPEL, IUP.
+            </div>
+        </div>
+
+
+        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-4 historia">
+             <div class="col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                El 27 de septiembre de 1983, tomó posesión la primera directiva del Instituto Universitario Experimental de Barquisimeto (IUEB) que impartía dos carreras cortas. Luego de varios procesos de investigación, el 31 de julio de 1986 se autoriza al IUEB para ofrecer la especialidad de administración.
+            </div>
+
+            <div class="row container col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/administracion.png" width="120px" height="90px">
+            </div>
+        </div>
+
+
+        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-4 historia">
+            <div class="col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/grupo.png" width="110px" height="100px">
+            </div>
+
+             <div class="row container col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                En diciembre de 1988, mediante el decreto 1.572 se oficializó el nombre de Andrés Eloy Blanco como epónimo de esa casa de estudio, y al año siguiente paso a llamarse Instituto Universitario Experimental de Tecnología Andrés Eloy Blanco (IUETAEB). 
+            </div>
+        </div>
+        
+
+        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-3 historia">
+             <div class="col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                En septiembre de 1989 se inició la carrera de turismo y ese mismo año comienza a impartirse la especialidad de deportes. Además, en septiembre de 1992 fue creada la carrera de Higiene y Seguridad Laboral.
+            </div>
+
+            <div class="row container col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/carreras.png" width="100px" height="100px">
+            </div>
+        </div>
+
+
+         <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-4 historia">
+            <div class="row container col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/varias.png" width="70px" height="130px">
+            </div>
+
+             <div class="col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                En 1993 se autoriza los estudios para formar técnicos superiores universitarios en Control de Calidad y cuatro años más tarde comienzan las especialidades de Contaduría y Mercadotecnia, así como de la Información y Documentación.
+            </div>
+        </div>
+
+
+        <div class="row col-lg-8 col-md-8 col-sm-12 col-xs-12 py-3 historia">
+             <div class="col-lg-9 col-md-7 col-sm-6 col-xs-6 info">
+                Posteriormente con la creación del Ministerio de Educación Superior, el 21 de noviembre del 2006 el Presidente de la República Bolivariana de Venezuela anuncio la creación de la misión Alma Mater para fundar nuevas universidades y transformar a los 29 institutos y Colegios universitarios existentes en el país en universidades politécnicas. Mediante esta transformación la IUETAEB se convierte en la Universidad Politécnica Territorial Andrés Eloy Blanco (UPTAEB).
+            </div>
+
+            <div class="row container col-lg-3 col-md-5 col-sm-6 col-xs-6 vector">
+                <img class="container" src="imagenes/logoUptaeb.png" width="100px" height="100px">
+            </div>
+        </div>
+
+       </a>
+    </section>
+
+   
+<br><br><br><br>
+
+    <section class="section-05">
+        <div class="row contenedor-footer">
+            <div class="obj col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="icon container">
+                    <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-ui-checks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+                        <path fill-rule="evenodd" d="M2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646l2-2a.5.5 0 1 0-.708-.708L2.5 4.293l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0zm0 8l2-2a.5.5 0 0 0-.708-.708L2.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0z"/>
+                        <path d="M7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+                        <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </div>
+                <div class="shadow-footer col-12">
+                    <h5>Objetivos</h5>
+                    <p class="container">Formar e instruir ciudadanos y ciudadanas profesionales con enfoque humanista, solidarios, participativos, cooperativos, innovadores, emprendedores e integrales</p> 
+                </div>
+            </div>
+
+            <div class="mis col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="icon container">
+                    <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-trophy-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"/>
+                    </svg>
+                    
+                </div>
+                <div class="shadow-footer col-12">
+                    <h5><a name="mision">Misión</a></h5>
+                    <p class="container">Proporcionar un alto nivel académico, científico y tecnológico, permitiendo la competitividad en las áreas de diseño, planificación y gestión del sistema de Higiene y Seguridad</p>
+                </div>
+            </div>
+
+            <div class="vis col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="icon container">
+                    <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-signpost-2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 1.414V16h2V1.414a1 1 0 0 0-2 0z"/>
+                        <path d="M1 3a1 1 0 0 1 1-1h11.5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.3 5.6a1 1 0 0 1-.8.4H2a1 1 0 0 1-1-1V3zm14 5a1 1 0 0 0-1-1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H14a1 1 0 0 0 1-1V8z"/>
+                    </svg>
+                </div>
+                <div class="shadow-footer col-12">
+                    <h5><a name="vision">Visión</a></h5>
+                    <p class="container">Establecer principios éticos, democráticos, de equidad y justicia social, contribuyendo a la calidad de vida para el desarrollo de una sociedad ambientalmente sustentable</p> 
+                </div>
+            </div>
+
+            <div class="ubi col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="icon container">
+                    <img src="imagenes/gps.png" width="50px" height="60px">
+                </div>
+                <div class="shadow-footer col-12">
+                    <h5><a name="ubicacion">Ubicación</a></h5>
+                    <p class="container">Av. Los Horcones con Av. La Salle, Municipio Iribarren, Parroquia Juan de Villegas, Barquisimeto, Estado Lara. Intalaciones de la UPTAEB, específicamente en el edificio La Hilandera, planta alta.</p> 
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+   
+
+    <footer class="bg-gradient-dark">
+          <ul class="list-unstyled list-inline text-center py-3">
+            <li class="list-inline-item">
+              <a href="#" class="mx-2">
+                <img src="imagenes/fb.png" width="50px" title="Facebook">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="mx-2">
+                <img src="imagenes/tw.png" width="50px" title="Twitter">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="mx-2">
+                <img src="imagenes/gm.png" width="50px" title="Correo">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="mx-2">
+                <img src="imagenes/ig.png" width="50px" title="Instagram">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="mx-2">
+                <img src="imagenes/ws.png" width="50px" title="WhatsApp">
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-copyright text-center text-light py-3">&copy; 2020 Copyright
+            <a href="#"> ControlerNote</a>
+          </div>
+
+    </footer>
+
+    
+    <script src="js/jQuery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/busqueda.js"></script>    
+</body>
+</html>

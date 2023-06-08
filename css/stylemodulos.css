@@ -1,0 +1,20 @@
+#body{
+  background: #ECEFF1 !important;
+  color: #4d4d4d !important;
+}
+/*---cabecera de la pagina*/
+#cabecera{
+	box-shadow: 0 3px 5px 0 rgb(194, 218, 255);
+}
+
+/*--menu--*/
+#menuenl:hover{
+	background: #0C4EB4;
+	color: #38ECB0;
+}
+/*--botones--*/
+#btn{
+	padding: 15px 35px;
+	font-size: 20px;
+}
+

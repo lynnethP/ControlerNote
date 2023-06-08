@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+  <!--menu-->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    
+
+  <a class="slider-brand d-flex align-items-center justify-content-center" href="#"> <img src="../imagenes/logo2.png" width="200px"></a>
+
+  <hr class="sidebar-divider my-0">
+
+  <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="usuario/index.html" title="Gestionar Usuario">Gestionar Usuario</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="seccion/index.html" title="Gestionar Sección">Gestionar Sección</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="saberesCompl/index.html" title="Gestionar Saberes Complementario">Gestionar Saberes Compl.</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="profesor/index.html" title="Gestionar Profesores">Gestionar Profesores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="tutores/index.html" title="Gestionar Tutores">Gestionar Tutores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="alumno/index.html" title="Gestionar Alumnos">Gestionar Alumnos</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="transcripcionNotas/index.html" title="Transcripción de Notas">Transcripción de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="listaNota/index.html" title="Lista de Notas">Lista de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="contsAprobados/index.html" title="Constancia de Aprovados">Constancia de Aprobados</a>
+  </li>
+  </ul>
+   <!--fin menu-->
+   <div id="content-wrapper" class="d-flex-flex-column">
+     
+     <div id="content">
+       
+       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        
+          <h2 class="text-dark">Admin | Samuel Torrealba</h2>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdow" aria-haspopup="true" aria-expanded="false" title="Notificaciones"><img src="../imagenes/menu.png"><span class="badge badge-danger badge-counter">+3</span></a>
+          </li>
+
+           <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../imagenes/manual.png" title="Ayuda" width="30px"></a>
+          </li>
+
+           <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="../index.html" id="alertsDropdow" aria-haspopup="true" aria-expanded="false" title="Cerrar Sesión"><img src="../imagenes/cerrar sesion.png" width="30px"></a>
+          </li>
+        </ul>
+       </nav>
+
+       <div class="container-fluid">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            
+            <h1 class="text-success">Pensum Estudiantil</h1>
+
+            <a class=" d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="#"><img src="../imagenes/descar.png">Descargar Pensum</a>
+          </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Secciones</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>  
+                  </div>
+                  <div class="col-auto"> <img src="../imagenes/logobolso.png" width="40px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Saberes</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">14</div>  
+                  </div>
+                  <div class="col-auto"> <img src="../imagenes/logobolso.png" width="40px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total de alumnos</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">2306</div>  
+                  </div>
+                  <div class="col-auto"> <img src="../imagenes/logobolso.png" width="40px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters aling-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Aprobados</div>
+                    <div class="row no-gutters align-items-center"></div>
+                    <div class="col-auto">
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
+                      <div class="col">
+                        <div class="progress progress-sm mr-2">
+                          <div class="progress-bar bg-info" role=" progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto"> <img src="../imagenes/logolista.png" width="40px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-danger shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters aling-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Reprobados</div>
+                    <div class="row no-gutters align-items-center"></div>
+                    <div class="col-auto">
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">30%</div>
+                      <div class="col">
+                        <div class="progress progress-sm mr-2">
+                          <div class="progress-bar bg-danger" role=" progressbar" style="width: 30%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto"> <img src="../imagenes/logolista.png" width="40px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+    <footer class="bg-gradient-dark">
+
+          <div class="footer-copyright text-center text-light py-3">&copy; 2020 Copyright
+            <a href="#"> ControlerNote</a>
+          </div>
+
+    </footer>
+
+    <script src="js/jQuery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/index.js"></script>      
+</body>
+</html>

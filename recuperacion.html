@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+  <section class="section-00">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="contenedor-form bg-gradient-info">
+          <div class="toggle">
+            <span class="Crearcuenta" id="enviar"><a href="index.html">Principal</a></span>
+          </div>
+
+          <div class="formulario">
+            <h2>Recuperar Contraseña</h2>
+            <form name="login">
+              <input type="text" placeholder="Usuario" name="usuario">
+              <input type="password" placeholder="Nueva Contraseña" name="password">
+            
+              <div class="olvido border-left-danger">
+                  <a href="login.html" class="">Inicio de Sesión</a> 
+              </div>
+
+              <div class="reset-password bg-gradient-warning">
+                <input class="" value="Cambiar Contraseña" onclick="Recuperar()" type="button">
+              </div>
+            </form>
+          </div>
+
+          
+        </div>
+      </div>
+  </section> 
+
+  <script src="js/jQuery-3.4.1.js"></script>
+  <script src="js/recuperacion.js"></script>
+</body>
+</html>

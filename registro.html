@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+  <section class="section-00">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="contenedor-form bg-gradient-info">
+        <div class="toggle">
+          <span class="Crearcuenta"> <a href="login.html">Regresar</a> </span>
+        </div>
+        <div class="formulario">
+          <h2>Crea tu cuenta</h2>
+          <form action="../NiceAdmin/index.html" method="post" name="login" onsubmit="return validar()">
+            <input type="text" id="usuario" placeholder="Usuario">
+            <input type="password" id="clave" placeholder="Contraseña">
+            <input type="password" id="clave_dos" placeholder="Contraseña nuevamente">
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <input type="text" id="telef" placeholder="Teléfono">
+
+            <div class="cuenta border-left-danger">
+                <a href="login.html" class="">¿Ya tienes Cuenta?</a> 
+            </div>
+            <div class="register col-12 bg-gradient-warning ">
+              <input class="" value="Registrarse" type="submit">
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/jQuery-3.4.1.js"></script>
+  <script src="js/registro.js"></script>
+</body>
+</html>

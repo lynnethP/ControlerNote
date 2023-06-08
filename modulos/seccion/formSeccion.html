@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTROLER NOTE</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+  <!--menu-->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    
+
+  <a class="slider-brand d-flex align-items-center justify-content-center" href="../index.html"> <img src="../../imagenes/logo2.png" width="200px"></a>
+
+  <hr class="sidebar-divider my-0">
+
+  <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../usuario/index.html">Gestionar Usuario</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../seccion/index.html">Gestionar Sección</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../saberesCompl/index.html">Gestionar Saberes Compl.</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../profesor/index.html">Gestionar Profesores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../tutores/index.html">Gestionar Tutores</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../alumno/index.html">Gestionar Alumnos</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a  id="menuenl" class="nav-link" href="../transcripcionNotas/index.html">Transcripción de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../listaNota/index.html">Lista de Notas</a>
+  </li>
+
+   <hr class="sidebar-divider my-0">
+
+   <li class="nav-item active">
+    <a id="menuenl" class="nav-link" href="../contsAprobados/index.html">Constancia de Aprobados</a>
+  </li>
+  </ul>
+  <!--fin menu-->
+   
+   <div id="content-wrapper" class="d-flex-flex-column">
+     
+     <div id="content">
+       <!--cabecera del sistema-->
+       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        
+            <h2 class="text-dark">Admin | Samuel Torrealba</h2>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../../imagenes/menu.png"><span class="badge badge-danger badge-counter">+3</span></a>
+          </li>
+
+           <div class="topbar-divider d-none d-sm-block"></div>
+
+            <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="../../index.html" id="alertsDropdow" aria-haspopup="true" aria-expanded="false"><img src="../../imagenes/cerrar sesion.png" width="30px"></a>
+          </li>
+        </ul>
+       </nav>
+
+       <div class="container-fluid">
+          <div class="d-sm-flex align-items-center text-aling-center justify-content-between mb-4">
+            <h1 class="text-success">Crear Sección</h1>
+            <a class=" d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" href="../seccion/index.html">Atrás</a>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 container-fluid">
+              <section class="panel">
+                <div class="panel-body">
+                  <div class="form">
+                    <form class="form-validate form-horizontal " id="register_form" method="get" action="">
+                      <div class="form-group">
+                        <label for="seccion" class="control-label col-lg-4">Código Sección: <span class="required">*</span></label>
+                        <div class="col-lg-10">
+                          <input class=" form-control" id="seccion" name="seccion" type="text" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="turno" class="control-label col-lg-2">Turno: <span class="required">*</span></label>
+                        <div class="col-lg-10">
+                          <input class=" form-control" id="turno" name="turno" type="text" />
+                        </div>
+                      </div>
+                      
+                      <div class="form-group py-4">
+                        <div class="col-lg-offset-2 col-lg-10">
+                          <button class="btn btn-primary" type="submit">Guardar</button>
+                          <button class="btn btn-danger float-right" type="button">Cancelar</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+</div>
+  
+
+
+
+    <footer class="bg-gradient-dark">
+
+          <div class="footer-copyright text-center text-light py-3">&copy; 2020 Copyright
+            <a href="#"> ControlerNote</a>
+          </div>
+
+    </footer>
+
+    <script src="js/jQuery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/busqueda.js"></script>
+    <script src="js/index.js"></script>      
+</body>
+</html>
